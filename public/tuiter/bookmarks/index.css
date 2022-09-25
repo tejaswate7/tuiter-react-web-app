@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+
+}
+
+.wd-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-float-left-top {
+    position: relative;
+    float: left;
+    left: 16px;
+    top: 12px;
+}
+
+.wd-padding-bottom{
+    padding-bottom: 12px;
+}
+
+.wd-padding-top{
+    padding-top: 12px;
+}
+.wd-float-bottom {
+    position: relative;
+    float: left;
+    bottom: 12px;
+}
+.wd-float-done {
+    clear: both;
+}
+.wd-handle {
+    color: lightgray;
+    font-size: 13px;
+}
+
+hr {
+    border: 1px solid lightgray;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-grid-col-third-page {
+    width: 10%;
+    height:100%;
+    float: left;
+}
+
+.wd-grid-col-two-thirds-page {
+    width: 90%;
+    height:100%;
+    float: left;
+}
+
+.wd-circular-square
+{ border-radius: 50%;
+}
+
+.wd-font-15-white-bold {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-font-15-lgray {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-flex-display {
+    display: flex;
+}
+
+.wd-full-width {
+    width: 800px;
+}
+
+.wd-main-content {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    left: 16px;
+    padding-bottom: 12px;
+}
+
+.wd-rounded-corners {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
