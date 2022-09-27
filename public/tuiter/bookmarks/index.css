@@ -92,3 +92,36 @@ hr {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
+
+.wd-fs15-white-bold {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-padding-all-12 {
+    padding: 12px;
+}
+
+.wd-fs15-lgray {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-red-color {
+    color: red;
+}
+
+.wd-rounded-corners-all {
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+.wd-width-504 {
+    width: 504px;
+}
+
+.wd-width-490 {
+    width: 490px;
+}
