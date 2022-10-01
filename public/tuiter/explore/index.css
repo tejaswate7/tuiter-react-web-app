@@ -8,6 +8,7 @@ body {
 
 .wd-input-txt {
     background-color: darkgray;
+    color: white;
     border-radius:10px;
     height: 25px;
     border: none;

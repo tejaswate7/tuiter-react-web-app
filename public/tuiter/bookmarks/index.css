@@ -151,3 +151,5 @@ hr {
     width: 15%;
     float: left;
 }
+
+.wd-a-class { color: inherit; text-decoration: None}
