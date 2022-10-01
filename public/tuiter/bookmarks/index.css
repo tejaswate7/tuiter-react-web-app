@@ -13,8 +13,8 @@ body {
 .wd-float-left-top {
     position: relative;
     float: left;
-    left: 16px;
-    top: 12px;
+    /*left: 16px;*/
+    /*top: 12px;*/
 }
 
 .wd-padding-bottom{
@@ -23,6 +23,10 @@ body {
 
 .wd-padding-top{
     padding-top: 12px;
+}
+
+.wd-padding-left{
+    padding-left: 12px;
 }
 .wd-float-bottom {
     position: relative;
@@ -45,14 +49,23 @@ hr {
     clear: both;
 }
 
+.wd-row-entry {
+    clear: both;
+    overflow: hidden;
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;
+}
+
 .wd-grid-col-third-page {
-    width: 10%;
+    width: min-content;
     height:100%;
     float: left;
 }
 
 .wd-grid-col-two-thirds-page {
-    width: 90%;
+    width: max-content;
     height:100%;
     float: left;
 }
@@ -124,4 +137,17 @@ hr {
 
 .wd-width-490 {
     width: 490px;
+}
+
+.wd-rounded-corners-bottom {
+    border: 1px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: None;
+}
+
+.grid-row-1-4 {
+    margin-top: 12px;
+    width: 15%;
+    float: left;
 }
