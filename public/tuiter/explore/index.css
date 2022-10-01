@@ -3,7 +3,7 @@ body {
     border-color: rgb(47, 51, 54);
     color: white;
     padding-left: 16px;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .wd-input-txt {
@@ -40,7 +40,7 @@ body {
 
 .wd-li-selected {
     color:rgb(29, 161, 242);
-    border-bottom: 3px solid rgb(29, 161, 242);
+    border-bottom: 2px solid rgb(29, 161, 242);
 }
 
 .wd-float-right {
@@ -59,7 +59,7 @@ body {
 }
 
 .wd-grid-col-two-thirds-page {
-    width: 67%;
+    width: max-content;
     float: left;
 }
 
@@ -88,4 +88,25 @@ hr {
 
 .wd-float-done {
     clear: both;
+}
+
+.wd-border-bottom {
+    color: rgb(110, 118, 125);
+    border-bottom: 1px solid rgb(110, 118, 125);
+}
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-center-align {
+    text-align: center;
+}
+
+br {
+    display: block;
+    margin-bottom: 0em;
+}
+
+.wd-left-align {
+    text-align: left;
 }
