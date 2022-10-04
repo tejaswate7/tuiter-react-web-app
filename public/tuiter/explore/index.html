@@ -3,82 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-    <div>
-        <input type="text" class="wd-input-txt" placeholder="Search Tuiter"/>
-        <div class = "wd-float-right">
-            <a class="wd-settings" href="explore-settings.html">&#x2699;</a><br/></div><br/>
-        <div class="wd-border-bottom">
-            <ul class="wd-horizontal-list">
-                <li class="wd-li-selected wd-li-padding wd-center-align">For you</li>
-                <li class="wd-li-padding wd-center-align">Trending</li>
-                <li class="wd-li-padding wd-center-align">COVID-19</li>
-                <li class="wd-li-padding wd-center-align">News</li>
-                <li class="wd-li-padding wd-center-align">Sports</li>
-                <li class="wd-li-padding wd-center-align">Entertainment</li>
-            </ul>
-        </div>
-        <div>
-            <div class="wd-post-txt">
-                <div class="wd-topic-np-txt wd-padding">Trending in Science</div>
-                <div class ="wd-bold wd-padding">Starship</div>
-                <div class="wd-topic-np-txt wd-padding">55.5K views</div>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="list-group-item active">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Home</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-hashtag" aria-hidden="true"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Explore</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-bell"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Notifications</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-envelope"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Messages</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-bookmark"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Bookmarks</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-list"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Lists</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-user"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">Profile</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-minus-circle"></i>
+                        <span class="d-none d-lg-inline-block d-xl-inline-block">More</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                    Tuit
+                </button>
             </div>
-            <div class="wd-post-txt">
-                <div class="wd-topic-np-txt wd-padding">Sports ⋅ Trending</div>
-                <div class ="wd-bold wd-padding">Joe Rogan</div>
-                <div class="wd-topic-np-txt wd-padding">5,218 Tweets</div>
-            </div>
-        </div>
-        <hr class="wd-topic-np-txt">
-        <div>
-            <div class="wd-post-txt ">
-                <div class="wd-grid-row">
-                    <div class=" wd-bold wd-float-left">The New York Times</div>
-                    <div class="wd-topic-np-txt">⋅ Yesterday</div>
+            <div class="col-6 col-sm-10 col-md-10 col-lg-6">
+                <div class="row">
+                    <div class="col-11">
+                        <input placeholder="Search Twitter" type="search"  class="form-control rounded-pill" />
+                    </div>
+                    <div class="col-1">
+                        <i class="fa fa-cog w-100 h-100 text-primary fa-2x"></i>
+                    </div>
                 </div>
-                <br/>
-                <div class="wd-bold ">CNN's cuomo conundrum: A star anchor with a brother in trouble</div>
-                <img src="news_img.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>
-            </div>
-            <div class="wd-float-done"></div>
-        </div>
-        <hr class="wd-topic-np-txt">
-        <div>
-            <div class="wd-post-txt">
-                <div>
-                    <div class="wd-topic-np-txt wd-padding">COVID-19 ⋅ LIVE</div>
+                <ul class="nav nav-tabs mt-1 mb-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="sports.html" tabindex="-1">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+                <div class="position-relative">
+                    <img class="w-100 mt-1" src="../../labs/a4/spaceship.jpeg"/>
+                    <h1 class="position-absolute bottom-0 left-0 text-white ms-1">SpaceX's Starship</h1>
                 </div>
-                <div class="wd-bold wd-float-left">COVID-19: News and Updates for Massachussets</div>
-                <img src="ma_logo.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row text-secondary ps-2">
+                                        Web Development
+                                </div>
+                                <div class="row text-black">
+                                    <div class="col pe-0 ps-2 mw-70 fw-bold">
+                                        ReactJS
+                                        <span>
+                                            <i class="fas fa-check-circle"></i> <span class="text-secondary">- 2h</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row fw-bold ps-2">
+                                    ReactJS is a component-based front-end library that makes it very easy to build single page applications or SPAs
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <img src="react-logo.jpeg" class="w-100">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row text-black">
+                                    <div class="col pe-0 ps-2 mw-70 fw-bold">
+                                        Javascript
+                                        <span>
+                                            <i class="fas fa-check-circle "></i> <span class="text-secondary">- 2h</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row fw-bold ps-2">
+                                    JavaScript is programming language that can run on browsers as well as desktops
+                                </div>
+                                <div class="row text-secondary ps-2">
+                                    123K Tweets
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <img src="javascript_logo.jpeg" class="w-100">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row text-secondary ps-2">
+                                    Web Development
+                                </div>
+                                <div class="row text-black">
+                                    <div class="col-2 pe-0 ps-2 mw-70 fw-bold">
+                                        JQuery
+                                    </div>
+                                </div>
+                                <div class="row text-secondary ps-2">
+                                    123K Tweets
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <img src="jquery_logo.jpeg" class="w-100">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row text-secondary ps-2">
+                                    Web Development
+                                </div>
+                                <div class="row text-black">
+                                    <div class="col pe-0 ps-2 mw-70 fw-bold">
+                                        NodeJS
+                                        <i class="fas fa-check-circle"></i> <span class="text-secondary">- 2h</span>
+                                    </div>
+                                </div>
+                                <div class="row text-secondary ps-2">
+                                    123K Tweets
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <img src="node_js.jpeg" class="w-100">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="wd-float-done"></div>
-        </div>
-        <hr class="wd-topic-np-txt">
-        <div>
-            <div class="wd-post-txt">
-                <div>
-                    <div class="wd-topic-np-txt wd-padding">Russia News ⋅ LIVE</div>
-                </div>
-                <div class="wd-bold wd-float-left">Moscow: Partial Mobilisation ordered</div>
-                <img src="putin.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>
+            <div class="col-4 col-lg-4 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                <ul class="list-group">
+                    <li class="list-group-item fw-bold">
+                        Who to follow
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="java-logo.jpeg" class="w-100 h-100 rounded-circle">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-black">
+                                    <div class="col fw-bold">
+                                        ReactJS
+                                        <span>
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="text-secondary">
+                                            @Java
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="relativity-space.jpeg" class="w-100 h-100 rounded-circle">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-black">
+                                    <div class="col fw-bold">
+                                        Relativity Space
+                                        <span>
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="text-secondary">
+                                            @relativityspace
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="virgin-logo.jpeg" class="w-100 h-100 rounded-circle">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-black">
+                                    <div class="col fw-bold">
+                                        Virgin Galactic
+                                        <span>
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="text-secondary">
+                                            @virgingalactic
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="nasa-logo.jpeg" class="w-100 h-100 rounded-circle">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-black">
+                                    <div class="col fw-bold">
+                                        NASA
+                                        <span>
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="text-secondary">
+                                            @NASA
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="tesla-logo.jpeg" class="w-100 h-100 rounded-circle">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-black">
+                                    <div class="col fw-bold">
+                                        Tesla
+                                        <span>
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="text-secondary">
+                                            @Tesla
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100 mt-1 rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="wd-float-done"></div>
         </div>
-        <hr class="wd-topic-np-txt">
-        <div class="wd-post-txt ">
-            <div>
-                <div class=" wd-bold wd-float-left">Bloomberg Opinion ⋅</div>
-                <div class="wd-topic-np-txt">Yesterday</div>
-            </div>
-            <br/>
-            <div class="wd-bold wd-left-align">Thinking about getting a booster? Read this first</div>
-            <img src="booster.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>
-        </div>
-
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <div>-->
+<!--        <input type="text" class="wd-input-txt" placeholder="Search Tuiter"/>-->
+<!--        <div class = "wd-float-right">-->
+<!--            <a class="wd-settings" href="explore-settings.html">&#x2699;</a><br/></div><br/>-->
+<!--        <div class="wd-border-bottom">-->
+<!--            <ul class="wd-horizontal-list">-->
+<!--                <li class="wd-li-selected wd-li-padding wd-center-align">For you</li>-->
+<!--                <li class="wd-li-padding wd-center-align">Trending</li>-->
+<!--                <li class="wd-li-padding wd-center-align">COVID-19</li>-->
+<!--                <li class="wd-li-padding wd-center-align">News</li>-->
+<!--                <li class="wd-li-padding wd-center-align">Sports</li>-->
+<!--                <li class="wd-li-padding wd-center-align">Entertainment</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div class="wd-post-txt">-->
+<!--                <div class="wd-topic-np-txt wd-padding">Trending in Science</div>-->
+<!--                <div class ="wd-bold wd-padding">Starship</div>-->
+<!--                <div class="wd-topic-np-txt wd-padding">55.5K views</div>-->
+<!--            </div>-->
+<!--            <div class="wd-post-txt">-->
+<!--                <div class="wd-topic-np-txt wd-padding">Sports ⋅ Trending</div>-->
+<!--                <div class ="wd-bold wd-padding">Joe Rogan</div>-->
+<!--                <div class="wd-topic-np-txt wd-padding">5,218 Tweets</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <hr class="wd-topic-np-txt">-->
+<!--        <div>-->
+<!--            <div class="wd-post-txt ">-->
+<!--                <div class="wd-grid-row">-->
+<!--                    <div class=" wd-bold wd-float-left">The New York Times</div>-->
+<!--                    <div class="wd-topic-np-txt">⋅ Yesterday</div>-->
+<!--                </div>-->
+<!--                <br/>-->
+<!--                <div class="wd-bold ">CNN's cuomo conundrum: A star anchor with a brother in trouble</div>-->
+<!--                <img src="news_img.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>-->
+<!--            </div>-->
+<!--            <div class="wd-float-done"></div>-->
+<!--        </div>-->
+<!--        <hr class="wd-topic-np-txt">-->
+<!--        <div>-->
+<!--            <div class="wd-post-txt">-->
+<!--                <div>-->
+<!--                    <div class="wd-topic-np-txt wd-padding">COVID-19 ⋅ LIVE</div>-->
+<!--                </div>-->
+<!--                <div class="wd-bold wd-float-left">COVID-19: News and Updates for Massachussets</div>-->
+<!--                <img src="ma_logo.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>-->
+<!--            </div>-->
+<!--            <div class="wd-float-done"></div>-->
+<!--        </div>-->
+<!--        <hr class="wd-topic-np-txt">-->
+<!--        <div>-->
+<!--            <div class="wd-post-txt">-->
+<!--                <div>-->
+<!--                    <div class="wd-topic-np-txt wd-padding">Russia News ⋅ LIVE</div>-->
+<!--                </div>-->
+<!--                <div class="wd-bold wd-float-left">Moscow: Partial Mobilisation ordered</div>-->
+<!--                <img src="putin.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>-->
+<!--            </div>-->
+<!--            <div class="wd-float-done"></div>-->
+<!--        </div>-->
+<!--        <hr class="wd-topic-np-txt">-->
+<!--        <div class="wd-post-txt ">-->
+<!--            <div>-->
+<!--                <div class=" wd-bold wd-float-left">Bloomberg Opinion ⋅</div>-->
+<!--                <div class="wd-topic-np-txt">Yesterday</div>-->
+<!--            </div>-->
+<!--            <br/>-->
+<!--            <div class="wd-bold wd-left-align">Thinking about getting a booster? Read this first</div>-->
+<!--            <img src="booster.jpeg" class="wd-float-right-img" width="100" height="100" style="border-radius: 20%"/>-->
+<!--        </div>-->
+
+<!--    </div>-->
 </body>
 </html>
