@@ -1,0 +1,12 @@
+input.wd-search-box {
+    border-radius: 50px;
+    background-color: white;
+    color: white;
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+}
+
+.wd-icon {
+    padding: 12px 10px 10px 10px;
+    min-width: 40px;
+}
