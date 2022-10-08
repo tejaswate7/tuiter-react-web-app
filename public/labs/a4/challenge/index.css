@@ -9,3 +9,7 @@ body {
 .wd-background-grey {
     background-color: #282c34;
 }
+
+.wd-border-bottom-blue {
+    border-bottom: 1px solid #61dafb;
+}
