@@ -6,15 +6,15 @@ function exploreComponent() {
     $('#wd-explore').append(`
        <h2>Explore</h2>
   <div class="row mt-2">
-   <div class="col-2 col-md-2 col-lg-1 col-xl-2">
+   <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-2 col-sm-2">
 <!--    <h3>NavigationSidebar</h3>-->
-    ${NavigationSidebar()}
+    ${NavigationSidebar("explore")}
    </div>
-   <div class="col-10 col-lg-7 col-xl-6">
+   <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-10 col-sm-10">
 <!--    <h3>ExploreComponent</h3>-->
     ${ExploreComponent()}
    </div>
-   <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+   <div class="col-xxl-3 col-xl-3 col-lg-4 d-none d-lg-block">
 <!--    <h3>WhoToFollowList </h3>-->
     ${WhoToFollowList()}
    </div>
