@@ -5,7 +5,7 @@ const PostSummaryItem = ( post ) => {
                                 <div class="row text-secondary ps-2">
                                         ${post.topic}
                                 </div>
-                                <div class="row text-black">
+                                <div class="row">
                                     <div class="col pe-0 ps-2 mw-70 fw-bold">
                                         ${post.userName}
                                         <span>

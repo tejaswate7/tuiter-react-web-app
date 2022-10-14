@@ -4,7 +4,6 @@ import ExploreComponent from "./ExploreComponent.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
-       <h2>Explore</h2>
   <div class="row mt-2">
    <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-2 col-sm-2">
 <!--    <h3>NavigationSidebar</h3>-->
