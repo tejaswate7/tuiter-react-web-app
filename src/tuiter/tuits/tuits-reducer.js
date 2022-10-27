@@ -26,7 +26,7 @@ const tuitsSlice = createSlice({
         deleteTuit(state, action) {
             const index = state
                 .findIndex(tuit =>
-                    tuit._id === action.payload);
+                    tuit._id === action.payload._id);
             state.splice(index, 1);
         },
         createTuit(state, action) {
