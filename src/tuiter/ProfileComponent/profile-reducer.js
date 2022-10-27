@@ -11,6 +11,7 @@ const profileSlice = createSlice({
             state[0].bio = action.payload.prof["bio"]
             state[0].location = action.payload.prof["location"]
             state[0].website = action.payload.prof["website"]
+            state[0].dateOfBirth = action.payload.prof["birthdate"]
         }
     }
 });

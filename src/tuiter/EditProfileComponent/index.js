@@ -8,6 +8,9 @@ const EditProfileComponent = () => {
     const [bio, setBio] = useState(profileArray[0].bio)
     const [location, setLocation] = useState(profileArray[0].location)
     const [website, setWebsite] = useState(profileArray[0].website)
+    const d = profileArray[0].dateOfBirth.split("/")
+    const ev = d[2] + "-" + d[1] + "-" + d[0]
+    const [birthdate, setBirthdate] = useState(ev)
 
     const dispatch = useDispatch();
     const updateProfileHandler = () => {
@@ -17,6 +20,7 @@ const EditProfileComponent = () => {
                 bio,
                 location,
                 website,
+                birthdate
             }
         }
 
@@ -57,6 +61,11 @@ const EditProfileComponent = () => {
                             <div className="col-sm-10">
                                 <input type="text" className="form-control" id="website" value={website}
                                        placeholder="Website" onChange={(event) => setWebsite(event.target.value)}/>
+                            </div>
+                            <label htmlFor="birthdate" className="col-sm-2 col-form-label">Birth Date</label>
+                            <div className="col-sm-10">
+                                <input type="date" className="form-control" id="birthdate"  value={birthdate}
+                                        onChange={(event) => setBirthdate(event.target.value)}/>
                             </div>
                     </div>
                 )
