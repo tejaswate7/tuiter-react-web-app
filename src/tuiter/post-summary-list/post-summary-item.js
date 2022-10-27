@@ -9,7 +9,7 @@ const PostSummaryItem = (
             "image": "tesla.png"
         }
     }
-) => {
+) => { 
     return(
         <li className="list-group-item">
             <div className="row">
