@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wd-bottom-left-profile-edit {
+  position: absolute;
+  bottom: 600px;
+  left: 16px;
+  font-size: 30px;
+}
+
+.wd-bottom-left-profile {
+  position: absolute;
+  bottom: 220px;
+  left: 16px;
+  font-size: 30px;
+}

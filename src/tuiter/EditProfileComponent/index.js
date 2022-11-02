@@ -1,6 +1,10 @@
 import {useDispatch, useSelector} from "react-redux";
+import {Link} from "react-router-dom"
 import React, {useState} from "react";
 import { updateProfile } from '../ProfileComponent/profile-reducer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faTimes} from '@fortawesome/free-solid-svg-icons'
+
 
 const EditProfileComponent = () => {
     const profileArray = useSelector(state => state.profile)
@@ -32,41 +36,55 @@ const EditProfileComponent = () => {
             {
                 profileArray.map(profile =>
                     <div>
-                            <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold float-end"
-                                onClick={updateProfileHandler}>Save</button>
-                            <div className="position-relative float-end">
-                                <img src={"/images/" + profile.profilePicture} width={600}/>
-                                <div className="position-absolute top-50 img-circle">
-                                    <img className="rounded-circle" src='/images/react-logo.jpeg' width={100}
-                                         height={100}/>
-                                </div>
+                        <div className="row">
+                            <div className="col-1 align-items-center p-3 ps-4">
+                                <Link to="/tuiter/profile"><FontAwesomeIcon icon={faTimes} /></Link>
                             </div>
-                            <div className="float-none">
-                                <label htmlFor="name" className="col-sm-2 col-form-label">Name</label>
-                                <div className="col-sm-10">
-                                    <input type="text" className="form-control" id="name" placeholder="Name" value={name}
-                                           onChange={(event) => setName(event.target.value)}/>
-                                </div>
+                            <div className="col-11">
+                                <span className="p-3 fw-bolder">Edit Profile</span>
+                                <Link to="/tuiter/profile"><button className="btn btn-primary rounded-pill float-end m-2 fw-bold" onClick={updateProfileHandler}>Save</button></Link>
                             </div>
-
+                        </div>
+                        <div className="row">
+                            <div className="col-12 mb-5">
+                                <img src={"/images/" + profile.profilePicture} width="100%" height="100%"/>
+                                <img src={"/images/react-logo.jpeg"} height="100px" width="100px" className="rounded-circle wd-bottom-left-profile-edit bg-white ms-2"/>
+                            </div>
+                        </div>
+                        <div className="border border-1 border-solid p-2 m-2">
+                            <label htmlFor="name" className="col-sm-2 col-form-label">Name</label>
+                            <div className="col-sm-10">
+                                <input type="text" className="form-control" id="name" placeholder="Name" value={name}
+                                       onChange={(event) => setName(event.target.value)}/>
+                            </div>
+                        </div>
+                        <div className="border border-1 border-solid p-2 m-2">
                             <label htmlFor="bio" className="col-sm-2 col-form-label">Bio</label>
                             <textarea id="bio" className="form-control" placeholder="Bio" value={bio} rows="4" cols="50"
                                       onChange={(event) => setBio(event.target.value)}></textarea>
+                        </div>
+                        <div className="border border-1 border-solid p-2 m-2">
                             <label htmlFor="location" className="col-sm-2 col-form-label">Location</label>
                             <div className="col-sm-10">
                                 <input type="text" className="form-control" id="location" value={location}
                                        placeholder="Location" onChange={(event) => setLocation(event.target.value)}/>
                             </div>
+                        </div>
+                        <div className="border border-1 border-solid p-2 m-2">
                             <label htmlFor="website" className="col-sm-2 col-form-label">Website</label>
                             <div className="col-sm-10">
                                 <input type="text" className="form-control" id="website" value={website}
                                        placeholder="Website" onChange={(event) => setWebsite(event.target.value)}/>
                             </div>
-                            <label htmlFor="birthdate" className="col-sm-2 col-form-label">Birth Date</label>
+                        </div>
+                        <div className="border border-1 border-solid p-2 m-2">
+                            <label htmlFor="birthdate" className="col-sm-2 col-form-label text-muted">Birth Date</label>
                             <div className="col-sm-10">
                                 <input type="date" className="form-control" id="birthdate"  value={birthdate}
-                                        onChange={(event) => setBirthdate(event.target.value)}/>
+                                       onChange={(event) => setBirthdate(event.target.value)}/>
                             </div>
+                        </div>
+
                     </div>
                 )
                 }
