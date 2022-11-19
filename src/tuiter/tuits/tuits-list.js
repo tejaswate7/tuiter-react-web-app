@@ -7,8 +7,8 @@ const TuitsList = () => {
     const { tuits, loading } = useSelector(state => state.tuitsData)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(findTuitsThunk)
-    }, [])
+        dispatch(findTuitsThunk())
+    }, [dispatch])
     return(
         <ul className="list-group">
             {
@@ -19,8 +19,8 @@ const TuitsList = () => {
             }
 
             {
-                tuits.map(post =>
-                    <TuitItem key={post._id} post={post}/>)
+                tuits.map( post =>
+                    <TuitItem  key={post._id} tuit={post}/>)
             }
 
         </ul>
