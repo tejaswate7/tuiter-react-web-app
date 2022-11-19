@@ -10,12 +10,13 @@ export const deleteTuitThunk = createAsyncThunk (
     "tuits/deleteTuit", async (tuitId) => {
         console.log("delete Tuit Thunk", tuitId)
         await service.deleteTuit(tuitId)
+        return tuitId
     }
 )
 
 export const createTuitThunk = createAsyncThunk(
-    "tuits/createTuit", async(tuitContent) => {
-        await service.createTuit(tuitContent)
+    "tuits/createTuit", async(thunkAPI) => {
+        await service.createTuit(thunkAPI)
     }
 )
 
